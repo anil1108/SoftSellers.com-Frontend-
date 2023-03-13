@@ -14,7 +14,7 @@
     <link rel="icon" class="title_logo" href="/logo/logo1.png" type="x-icon/image">
 </head>
 
-<body>
+<body onload="">
     <nav class="navbar">
         <div class="img_container">
             <img src="/images/logo1.png" alt="not_set">
@@ -28,7 +28,7 @@
             <li class="item"><a href="/login.html">Login/Signup</a></li>
             <li class="item"><a href="becomeA_Seller.html">Become a Seller</a></li>
             <li class="item"><a href="">More</a></li>
-            <li class="item"><a href=""><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
+            <li class="item"><a href="add_to_cart.html"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
         </ul>
     </nav>
 
@@ -59,7 +59,7 @@
         </div>
     </header>
 
-    <section class="contents grid_container">
+    <section class="contents grid_container" id="sect_cont">
 
         <!--  <div class="items">
             <div class="product_header">
@@ -87,7 +87,8 @@
                 <button type="button" id="to_cart"><a href="add_to_cart.html"> ADD TO CART</a></button>
             </div>
         </div> -->
-        <div class="items">
+        
+        <!-- <div class="items" id="item_block">
             <a href="product.html">
                 <div class="product_header">
                     <div class="img_container">
@@ -108,7 +109,7 @@
                     dolorum vero non possimus!</p>
             </div>
             <div class="item_price">
-                <label for="price" id = "price">1,500</label>
+                <label for="price" id="price">1,500</label>
                 <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>
                 <label for="profit" id="profit">76% off</label>
             </div>
@@ -116,8 +117,8 @@
                 <button id="to_buy">BUY</button>
                 <button id="to_cart">ADD TO CART</button>
             </div>
-        </div> 
-        <div class="items">
+        </div> -->
+        <!-- <div class="items" id="item_block">
             <a href="product.html">
                 <div class="product_header">
                     <div class="img_container">
@@ -138,157 +139,7 @@
                     dolorum vero non possimus!</p>
             </div>
             <div class="item_price">
-                <label for="price" id = price>1,500</label>
-                <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>
-                <label for="profit" id="profit">76% off</label>
-            </div>
-            <div id="btns">
-                <button id="to_buy">BUY</button>
-                <button id="to_cart">ADD TO CART</button>
-            </div>
-        </div>
-        <!-- <div class="items">
-            <a href="">
-                <div class="product_header">
-                    <div class="img_container">
-                        <img src="/images/logo1.png" id="product_img" alt="Image not found">
-                    </div>
-                    <div class="product_name">
-                        <h3 id="product_title">Image 1
-                    </div>
-                    </h3>
-                </div>
-            </a>
-            <div id="product_description">
-                <p>It is the description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eius ex
-                    lorem32 error reiciendis fugit porro, commodi molestias pariatur unde dolores iure aliquam assumenda
-                    magni dignissimos velit ducimus esse, tempore quas? of the Image Lorem, ipsum dolor
-                    sit amet consectetur adipisicing elit. Eum voluptatum, dolor
-                    autem atque ullam saepe dolores rem odit consequuntur minus cumque eaque, cum, dolore animi quidem
-                    dolorum vero non possimus!</p>
-            </div>
-            <div class="item_price">
-                <label for="price" id = price>1,500</label>
-                <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>
-                <label for="profit" id="profit">76% off</label>
-            </div>
-            <div id="btns">
-                <button id="to_buy">BUY</button>
-                <button id="to_cart">ADD TO CART</button>
-            </div>
-        </div>
-        <div class="items">
-            <a href="">
-                <div class="product_header">
-                    <div class="img_container">
-                        <img src="/images/logo1.png" id="product_img" alt="Image not found">
-                    </div>
-                    <div class="product_name">
-                        <h3 id="product_title">Image 1
-                    </div>
-                    </h3>
-                </div>
-            </a>
-            <div id="product_description">
-                <p>It is the description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eius ex
-                    lorem32 error reiciendis fugit porro, commodi molestias pariatur unde dolores iure aliquam assumenda
-                    magni dignissimos velit ducimus esse, tempore quas? of the Image Lorem, ipsum dolor
-                    sit amet consectetur adipisicing elit. Eum voluptatum, dolor
-                    autem atque ullam saepe dolores rem odit consequuntur minus cumque eaque, cum, dolore animi quidem
-                    dolorum vero non possimus!</p>
-            </div>
-            <div class="item_price">
-                <label for="price" id = price>1,500</label>
-                <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>
-                <label for="profit" id="profit">76% off</label>
-            </div>
-            <div id="btns">
-                <button id="to_buy">BUY</button>
-                <button id="to_cart">ADD TO CART</button>
-            </div>
-        </div>
-        <div class="items">
-            <a href="">
-                <div class="product_header">
-                    <div class="img_container">
-                        <img src="/images/logo1.png" id="product_img" alt="Image not found">
-                    </div>
-                    <div class="product_name">
-                        <h3 id="product_title">Image 1
-                    </div>
-                    </h3>
-                </div>
-            </a>
-            <div id="product_description">
-                <p>It is the description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eius ex
-                    lorem32 error reiciendis fugit porro, commodi molestias pariatur unde dolores iure aliquam assumenda
-                    magni dignissimos velit ducimus esse, tempore quas? of the Image Lorem, ipsum dolor
-                    sit amet consectetur adipisicing elit. Eum voluptatum, dolor
-                    autem atque ullam saepe dolores rem odit consequuntur minus cumque eaque, cum, dolore animi quidem
-                    dolorum vero non possimus!</p>
-            </div>
-            <div class="item_price">
-                <label for="price" id = price>1,500</label>
-                <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>
-                <label for="profit" id="profit">76% off</label>
-            </div>
-            <div id="btns">
-                <button id="to_buy">BUY</button>
-                <button id="to_cart">ADD TO CART</button>
-            </div>
-        </div>
-        <div class="items">
-            <a href="">
-                <div class="product_header">
-                    <div class="img_container">
-                        <img src="/images/logo1.png" id="product_img" alt="Image not found">
-                    </div>
-                    <div class="product_name">
-                        <h3 id="product_title">Image 1
-                    </div>
-                    </h3>
-                </div>
-            </a>
-            <div id="product_description">
-                <p>It is the description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eius ex
-                    lorem32 error reiciendis fugit porro, commodi molestias pariatur unde dolores iure aliquam assumenda
-                    magni dignissimos velit ducimus esse, tempore quas? of the Image Lorem, ipsum dolor
-                    sit amet consectetur adipisicing elit. Eum voluptatum, dolor
-                    autem atque ullam saepe dolores rem odit consequuntur minus cumque eaque, cum, dolore animi quidem
-                    dolorum vero non possimus!</p>
-            </div>
-            <div class="item_price">
-                <label for="price" id = price>1,500</label>
-                <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>
-                <label for="profit" id="profit">76% off</label>
-            </div>
-            <div id="btns">
-                <button id="to_buy">BUY</button>
-                <button id="to_cart">ADD TO CART</button>
-            </div>
-        </div>
-        <div class="items">
-            <a href="">
-                <div class="product_header">
-                    <div class="img_container">
-                        <img src="/images/logo1.png" id="product_img" alt="Image not found">
-                    </div>
-                    <div class="product_name">
-                        <h3 id="product_title">Image 1
-                    </div>
-                    </h3>
-                </div>
-            </a>
-            <div id="product_description">
-                <p>It is the description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eius ex
-                    lorem32 error reiciendis fugit porro, commodi molestias pariatur unde dolores iure aliquam assumenda
-                    magni dignissimos velit ducimus esse, tempore quas? of the Image Lorem, ipsum dolor
-                    sit amet consectetur adipisicing elit. Eum voluptatum, dolor
-                    autem atque ullam saepe dolores rem odit consequuntur minus cumque eaque, cum, dolore animi quidem
-                    dolorum vero non possimus!</p>
-            </div>
-            <div class="item_price">
-                <label for="price" id = price>1,500</label>
+                <label for="price" id=price>1,500</label>
                 <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>
                 <label for="profit" id="profit">76% off</label>
             </div>
@@ -297,6 +148,7 @@
                 <button id="to_cart">ADD TO CART</button>
             </div>
         </div> -->
+
 
 
     </section>
@@ -344,7 +196,7 @@
                 </ul>
             </div>
         </div>
-
+<a href="add_to_cart.html"></a>
         <div class="last_footer">
             <p>Softsellers.com &copy; All rights reserved</p>
             <p>***************************************</p>
@@ -352,5 +204,51 @@
         </div>
     </footer>
 </body>
+<script>
+    
+    const abc = document.getElementById("sect_cont");
+    window.addEventListener("load",add_more_field);
 
+
+    function add_more_field(){
+        console.log("add");
+        for(var i = 1;i<=20;i++){
+            html='<div class="items" id="item_block">\
+                    <a href="product.html">\
+                    <div class="product_header">\
+                        <div class="img_container">\
+                        <img src="/images/2.jpg" id="product_img" alt="Image not found">\
+                        </div>\
+                    <div class="product_name">\
+                        <h3 id="product_title">Image 1\
+                    </div>\
+                    </h3>\
+                </div>\
+                    </a>\
+                    <div id="product_description">\
+                    <p>It is the description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eius ex\
+                    lorem32 error reiciendis fugit porro, commodi molestias pariatur unde dolores iure aliquam assumenda\
+                    magni dignissimos velit ducimus esse, tempore quas? of the Image Lorem, ipsum dolor\
+                    sit amet consectetur adipisicing elit. Eum voluptatum, dolor\
+                    autem atque ullam saepe dolores rem odit consequuntur minus cumque eaque, cum, dolore animi quidem\
+                    dolorum vero non possimus!</p>\
+                </div>\
+                <div class="item_price">\
+                    <label for="price" id = "price">1,500</label>\
+                    <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>\
+                    <label for="profit" id="profit">76% off</label>\
+                </div>\
+                <div id="btns">\
+                    <button id="to_buy">BUY</button>\
+                    <button id="to_cart"><a href="add_to_cart.html">ADD TO CART</a></button>\
+                </div>\
+                </div>'
+
+                var form=document.getElementById('sect_cont')
+                form.innerHTML+=html;
+            }
+       
+        
+    }
+</script>
 </html>
