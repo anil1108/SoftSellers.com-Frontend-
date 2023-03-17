@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME PAGE</title>
     <link rel="stylesheet" href="/CSS/homepage.css">
+    
     <link rel="icon" type="image/x-icon" href="images/logo-no-background.ico"/>
     <script src="https://kit.fontawesome.com/9110d07ed9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="JS/script.js"></script>
+
 </head>
 
 <body onload="">
@@ -25,11 +29,22 @@
             <img src="/images/logo1.png" alt="not_set">
         </div>
         <div class="searchbar">
-            <input type="text" placeholder="Search.." id="t_search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <button type="button" class="mic"><i class="fa-regular fa-microphone"></i></button>
-            <!-- <input type="button" name="search_button" id="search1" placeholder="search"> -->
+            <!-- <input type="text" placeholder="Search.." id="t_search">
+            <button type="submit" class="s_btn"><i class="fa fa-search"></i></button> -->
+
+            <div class="wrapper">
+                <div class="search-input">
+                  <a href="" target="_blank" hidden></a>
+                  <input type="text" placeholder="Type to search..">
+                  <div class="autocom-box">
+                    <!-- here list are inserted from javascript -->
+                  </div>
+                  <div class="icon"><i class="fas fa-search"></i></div>
+                </div>
+              </div> 
+            
         </div>
+        <button type="button" id="start-btn" class="mic"><i class="fa-sharp fa-solid fa-microphone"></i></button>
         <ul class="items">
             <li class="item"><a href="/homepage.html">Home</a></li>
             <li class="item"><a href="/login.html">Login/Signup</a></li>
@@ -155,6 +170,12 @@
         </div>
     </footer>
 </body>
+<script src="JS/homepage.js"></script>
+<script src="Autocomplete Search Suggestions/script.js"></script>
+<script src="Autocomplete Search Suggestions/suggestions.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="/JS/script.js"></script>
+
 <script>
     
     const abc = document.getElementById("sect_cont");

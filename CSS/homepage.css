@@ -24,6 +24,9 @@
   opacity: 0.4;
 }
 
+#instructions{
+  /* display: none; */
+}
 
 .navbar {
     height: var(--navbar-height);
@@ -73,14 +76,14 @@
     font-size: medium;
   }
 
-.navbar .searchbar button{
+.navbar .searchbar .s_btn{
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   float: left;
   width: 20%;
   height: 36px;
   padding: 6.7px;
-  background: #5c5d5e;
+  background: #757677;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -89,14 +92,107 @@
     
 }
 
-.navbar .searchbar .mic{
+
+
+::selection{
+  color: #fff;
+  background: #664AFF;
+}
+
+.wrapper{
+  max-width: 450px;
+  margin: 150px auto;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 35px;
+  width: 300px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: -8px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
+
+.navbar  .mic{
   border-radius: 50px;
-  width: 50px;
+  width: 40px;
+  background:none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  color: #090a0a;
+  font-size: 22px;
+}
+
+.fa-sharp{
+  color: rgb(122, 120, 120);
 }
 
 
-.navbar .searchbar button:hover{
-    background: #434445;
+/* .navbar .searchbar .s_btn:hover{
+    background: #565858;
+} */
+
+.navbar .searchbar .mic:hover{
+  background-color: rgb(202, 212, 209);
 }
 
 .navbar ul{
@@ -149,10 +245,9 @@
   display: block;
   text-align: center;
   margin: 5px;
-  /* margin-inline: 90px ; */
-  /* background-color: #ffffff; */
   border-radius: 15px;
   background-image: -o-linear-gradient(red,black);
+  transition: 0.3s ease;
 }
 
 .categories div a:hover{
