@@ -29,11 +29,11 @@ var x = '';
 $("#start-btn").click(function(event){
     console.log("1st");
     count+=1;
-if(count%2==0){
+if(count%2==0){ 
     if (content.length){
         content+='' 
     }if(content==''){
-        recognition.start()
+        recognition.start();
     }
     else{
         content=x;
