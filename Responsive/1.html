@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav_res.css">
+</head>
+<body>
+    <div class="example" id="up1">
+        <button class="down" onclick="btn_clicked()">click</button>
+        <ul class="up">
+            <li>15</li>
+            <li>15</li>
+            <li>15</li>
+            <li>15</li>
+        </ul>
+      </div>
+</body>
+<script>
+    var counter = 1;
+    function btn_clicked(){
+        counter+1;
+      var click = document.getElementById("up1");
+      if(click.className === "up" && counter%2==0){
+        click.className += "responsive";
+      }
+      else{
+        click.className = "up";
+      }
+    }
+    
+    
+        // function myFunction() {
+        //   var x = document.getElementById("item_nav");
+        //   if (x.className === "items") {
+        //     x.className += " responsive";
+        //   } else {
+        //     x.className = "items";
+        //   }
+        // }
+        </script>
+</html>

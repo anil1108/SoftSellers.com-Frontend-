@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav_res.css">
+    <script src="https://kit.fontawesome.com/9110d07ed9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="img_container">
+            <img src="/images/logo1.png" alt="not_set">
+        </div>
+        <div class="searchbar">
+            <div id="wrapper1" class="wrapper">
+                <div class="search-input">
+                  <a href="" target="_blank" hidden></a>
+                  <input type="text" onclick="addclass()" placeholder="Type to search.." id="t_search">
+                  <div class="autocom-box">
+                    <!-- here list are inserted from javascript -->
+                  </div>
+                  <div class="icon"><i class="fas fa-search"></i></div>
+                </div>
+              </div> 
+        </div>
+        <button type="button" id="start-btn" onclick="change_color()" class="mic"><i class="fa-sharp fa-solid fa-microphone"></i></button>
+        <ul class="items" id="item_nav">
+            <li class="item"><a href="/homepage.html">Home</a></li>
+            <li class="item"><a href="/login.html">Login/Signup</a></li>
+            <li class="item"><a href="becomeA_Seller.html">Become a Seller</a></li>
+            <li class="item"><a href="add_to_cart.html"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa-sharp fa fa-bars"></i>
+              </a></li>
+        </ul>
+        
+    </nav>
+
+
+    <div class="example" id="up1">
+      <button class="down" onclick="btn_clicked()">click</button>
+      <ul class="up">
+        <li>15</li>
+        <li>15</li>
+        <li>15</li>
+        <li>15</li>
+      </ul>
+    </div>
+    
+</body>
+<script src="/JS/script.js"></script>
+<script>
+function btn_clicked(){
+  var click = document.getElementById("up1");
+  if(click.className === "up"){
+    click.className += "responsive";
+  }
+  else{
+    click.className = "up";
+  }
+}
+
+
+    // function myFunction() {
+    //   var x = document.getElementById("item_nav");
+    //   if (x.className === "items") {
+    //     x.className += " responsive";
+    //   } else {
+    //     x.className = "items";
+    //   }
+    // }
+    </script>
+</html>

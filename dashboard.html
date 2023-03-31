@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <script src="https://kit.fontawesome.com/9110d07ed9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        
+        <div class="img_container">
+            <img src="/images/logo1.png" alt="not_set">
+        </div>
+        <div class="searchbar">
+           
+
+            <div id="wrapper1" class="wrapper">
+                <div class="search-input">
+                    <a href="" target="_blank" hidden></a>
+                    <input type="text" onclick="addclass()" placeholder="Type to search.." id="t_search">
+                    <div class="autocom-box">
+                        <!-- here list are inserted from javascript -->
+                    </div>
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
+
+        </div>
+        <button type="button" id="start-btn" class="mic"><i class="fa-sharp fa-solid fa-microphone"></i></button>
+        <ul class="items">
+            <li class="item"><a href="/homepage.html">Home</a></li>
+            <li class="item"><a href="/login.html">Login/Signup</a></li>
+            <li class="item ">
+                <a href="#" class="dropdownbtn">
+                    More
+                    <ol class="dropd1 dropdown-content">
+                        <li>Profile</li>
+                        <li class="dropdownbtn1">
+                            Categories
+                            <ol class="dropd2 dropdown-content1 dropdownbtn1">
+                                <li>Text Files</li>
+                                <li>Image Files</li>
+                                <li>Audio Files</li>
+                                <li>Video Files</li>
+                            </ol>
+                        </li>
+                    </ol>
+
+                </a>
+            </li>
+            <li class="item"><a href="add_to_cart.html"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="main-container toggler">
+        
+        <!-- left section -->
+        <div class="profile">
+            <div class="togglebtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- left-side top section -->
+            <div class="editor">
+                <div class="img-container">
+                    <img src="images/logo1.png" alt="not loaded">
+                </div>
+                <button class="profile_editor" onclick="show_popup()"><i class="fa-solid fa-user-pen"></i> Edit</button>
+            </div>
+
+
+            <!-- left-side bottom section -->
+            <div class="actions">
+                <ul>
+                    <a href="#">
+                        <li>Products</li>
+                    </a>
+                    <a href="#">
+                        <li>Bank Account</li>
+                    </a>
+                    <a href="#">
+                        <li>verification</li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fa-solid fa-right-from-bracket"></i> Logout</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- right section -->
+        <div class="more-info">
+            <div class="seller-details">
+                <h2>Welcome <label for="name">Softseller</label></h2>
+            </div>
+
+
+            <div class="upload-items">
+                <h2>Upload Items</h2>
+                <div class="combine">
+                    <form action="#" class="flex-container">
+                        <div class="item-labels">
+                            <label for="product_name">Name : </label>
+                            <input type="text" name="p_name" id="p_name">
+                        </div>
+                        <div class="item-labels">
+                            <label for="product_title">Upload Image : </label>
+                            <input type="file" name="p_img" id="p_img">
+                        </div>
+
+                        <div class="item-labels">
+                            <label for="product_desc">Description : </label>
+                            <input type="text" name="p_desc" id="p_desc">
+                        </div>
+                        <div class="item-labels">
+                            <label for="product_price">Price : </label>
+                            <input type="text" name="p_price" id="p_price">
+                        </div>
+                        <div class="item-labels">
+                            <label for="product_price">Price : </label>
+                            <input type="text" name="p_price" id="p_price">
+                        </div>
+                    </form>
+
+                </div>
+                <button type="button" id="add-row" onclick="add_more_row()">New</button>
+                <button type="button" id="verify">Apply to verify Product</button>
+
+            </div>
+        </div>
+
+
+        <!-- show popup menu -->
+        <div class="popup" id="pop_1">
+            <div class="popup-content">
+                <form action="#" class="flex-cont">
+                    <button class="close" id="close" onclick="close_popup()"><i class="fa-regular fa-circle-xmark"></i>
+                    </button>
+                    <div class="item-labels">
+                        <label for="img">Change profile photo : </label>
+                        <input type="file" name="prf_img" id="prf_img">
+                    </div>
+                    <div class="item-labels">
+                        <label for="f_name">First Name : </label>
+                        <input type="text" name="f_name" id="f_name">
+                    </div>
+                    <div class="item-labels">
+                        <label for="l_name">Last Name : </label>
+                        <input type="text" name="l_name" id="l_name">
+                    </div>
+                    <div class="item-labels">
+                        <label for="e_mail">Email :</label>
+                        <input type="mail" name="e_mail" id="e_mail">
+                    </div>
+                    <div class="item-labels">
+                        <label for="password">Password :</label>
+                        <input type="password" name="pass" id="pass">
+                    </div>
+                    <div class="item-labels">
+                        <label for="con_password">Confirm Password :</label>
+                        <input type="password" name="con_pass" id="con_pass">
+                    </div>
+                    <div class="btns">
+                        <button type="button">save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</body>
+<script>
+    function add_more_row() {
+        var counter = 1;
+        html = '<tr>\
+                            <td>2</td>\
+                            <td><input type="text" name="" id=""></td>\
+                            <td><input type="text" name="" id=""></td>\
+                            <td><input type="number" name="" id=""></td>\
+                            <td><input type="file" name="" id=""></td>\
+                            <td><i class="fa-solid fa-check"></i></td>\
+                            <td><i class="fa-solid fa-pen-to-square"></i></td>\
+                            <td><i class="fa-solid fa-trash"></i></td>\
+                        </tr>'
+    }
+
+    var form = document.getElementById('table_item');
+    form.innerHTML += html;
+</script>
+<script src="/JS/popup.js"></script>
+<script src="Autocomplete Search Suggestions/script.js"></script>
+<script src="Autocomplete Search Suggestions/suggestions.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</html>
