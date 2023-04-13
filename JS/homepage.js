@@ -1,4 +1,9 @@
 'use strict';
+
+
+
+
+
 // getting all required elements
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
@@ -40,11 +45,6 @@ inputBox.onkeyup = (e)=>{
 function select(element){
     let selectData = element.textContent;
     inputBox.value = selectData;
-    // icon.onclick = ()=>{
-       // webLink = `https://www.google.com/search?q=${selectData}`;
-        // linkTag.setAttribute("href", webLink);
-        // linkTag.click(); 
-    // }
     searchWrapper.classList.remove("active");
 }
 
