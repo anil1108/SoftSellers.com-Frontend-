@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/customers.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="img_container">
+            <img src="/images/logo1.png" alt="not_set">
+        </div>
+        <div class="searchbar">
+            <div id="wrapper1" class="wrapper">
+                <div class="search-input">
+                    <a href="" target="_blank" hidden></a>
+                    <input type="text" onclick="addclass()" placeholder="Type to search.." id="t_search">
+                    <div class="autocom-box">
+                        <!-- here list are inserted from javascript -->
+                    </div>
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
+
+        </div>
+        <button type="button" id="start-btn" class="mic"><i class="fa-sharp fa-solid fa-microphone"></i></button>
+        <ul class="items">
+            <li class="item"><a href="/homepage.html">Home</a></li>
+            <li class="item"><a href="/login.html">Login/Signup</a></li>
+            <li class="item"><a href="becomeA_Seller.html">Become a Seller</a></li>
+            <li class="item"><a href="add_to_cart.html"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
+        </ul>
+
+
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="main_dash">
+
+
+        <div class="sidenav" id="mySidenav">
+            <p class="logo"><span>S</span>oftSellers</p>
+            <a href="admin_dashboard.html" class="icon-a"><i class="fa fa-dashboard icons"></i>&nbsp;&nbsp;&nbsp; <span
+                    class="hide">Dashboard</span></a>
+            <a href="customers.html" class="icon-a"><i class="fa fa-user icons"></i>&nbsp;&nbsp;&nbsp; <span
+                    class="hide">Buyers</span></a>
+            <a href="#" class="icon-a"><i class="fa fa-list icons"></i>&nbsp;&nbsp;&nbsp; <span
+                    class="hide">Sellers</span></a>
+            <a href="products_dash.html" class="icon-a"><i class="fa fa-shopping-bag icons"></i>&nbsp;&nbsp;&nbsp; <span
+                    class="hide">Products</span></a>
+            <a href="inventory.html" class="icon-a"><i class="fa fa-tasks icons"></i>&nbsp;&nbsp;&nbsp; <span
+                    class="hide">Inventory</span></a>
+            <a href="#" class="icon-a"><i class="fa fa-list-alt icons"></i>&nbsp;&nbsp;&nbsp; <span
+                    class="hide">Tasks</span></a>
+        </div>
+
+        <div id="main">
+            <div class="head">
+                <div class="col-div-6">
+                    <span style="font-size:30px; cursor: pointer; color:
+                rgb(1, 1, 1);" class="nav">&#9776; Dashboard</span>
+                    <span style="font-size:30px; cursor: pointer; color:
+                rgb(10, 9, 9);" class="nav2">&#9776; Dashboard</span>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+
+
+            <div class="col-div-8">
+                <div class="box-8">
+                    <div class="content-box">
+                        <p>Buyers<span>View All </span></p>
+                        <br />
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Contact</th>
+                                <th>Product</th>
+                            </tr>
+                            <tr>
+                                <td>Unknown</td>
+                                <td>9923xxxxxx</td>
+                                <td>Image File</td>
+                            </tr>
+                            <tr>
+                                <td>Binod</td>
+                                <td>746453454</td>
+                                <td>Video File</td>
+                            </tr>
+                            <tr>
+                                <td>Rati Shankar</td>
+                                <td>746453454</td>
+                                <td>Text File</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+            <script>
+                $(".nav").click(function () {
+                    // alert("hello.");
+                    $("#mySidenav").css('width', '70px');
+                    $("#main").css('margin-left', '70px');
+                    $(".logo").css('visibility', 'hidden');
+                    $(".logo span").css('visibility', 'visible');
+                    $(".logo span").css('margin-left', '-10px');
+                    $(".icon-a").css('visibility', 'visible');
+                    $(".icons").css('visibility', 'visible');
+                    $(".icons").css('margin-left', '-10px');
+                    $(".nav").css('display', 'none');
+                    $(".nav2").css('display', 'block');
+                    $(".hide").css('margin-left', '50px');
+                    // $(".profile").css('width','20%');
+                    // $(".nav").css('width','80%');
+                });
+
+
+                $(".nav2").click(function () {
+                    $("#mySidenav").css('width', '300px');
+                    $("#main").css('margin-left', '300px');
+                    $(".logo").css('visibility', 'visible');
+                    $(".logo span").css('visibility', 'visible');
+                    $(".icons").css('visibility', 'visible');
+                    $(".nav").css('display', 'block');
+                    $(".nav2").css('display', 'none');
+                    $(".hide").css('margin-left', '0px');
+
+                });
+
+
+            </script>
+</body>
+
+<script src="JS/homepage.js">
+    const mic_col = document.getElementById('start-btn');
+    var count = 1;
+    function change_color() {
+        count += 1;
+        if (count % 2 == 0) {
+            mic_col.style.color = "black";
+        }
+
+    }
+</script>
+<script src="Autocomplete Search Suggestions/script.js"></script>
+<script src="Autocomplete Search Suggestions/suggestions.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="/JS/script.js"></script>
+
+<script>
+    burger = document.querySelector('.burger')
+    navbar = document.querySelector('.items')
+    var count = 1;
+    burger.addEventListener('click', () => {
+        count += 1;
+        if (count % 2 == 0) {
+            navbar.style.display = 'flex';
+        }
+        else {
+            navbar.style.display = 'none';
+
+        }
+    })
+
+</script>
+
+</html>

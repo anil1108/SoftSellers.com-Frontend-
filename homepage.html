@@ -44,9 +44,8 @@
                     <div class="icon"><i class="fas fa-search"></i></div>
                 </div>
             </div>
-
+            <button type="button" id="start-btn" class="mic"><i class="fa-sharp fa-solid fa-microphone"></i></button>
         </div>
-        <button type="button" id="start-btn" class="mic"><i class="fa-sharp fa-solid fa-microphone"></i></button>
         <ul class="items">
             <li class="item"><a href="/homepage.html">Home</a></li>
             <li class="item"><a href="/login.html">Login/Signup</a></li>
@@ -125,11 +124,6 @@
         </div>
 
 
-
-
-
-
-
     </section>
 
     <footer class="footer_main">
@@ -183,6 +177,9 @@
         </div>
     </footer>
 </body>
+
+
+
 <script src="JS/homepage.js">
     const mic_col = document.getElementById('start-btn');
     var count = 1;
@@ -200,20 +197,30 @@
 <script src="/JS/script.js"></script>
 <script>
     // burger button function
-burger = document.querySelector('.burger')
-navbar = document.querySelector('.items')
-var count = 1;
-burger.addEventListener('click', () => {
-    count+=1;
-    if(count%2 == 0){
-        navbar.style.display='flex';
-    }
-    else{
-        navbar.style.display='none';
+    burger = document.querySelector('.burger')
+    navbar = document.querySelector('.items')
+    var count = 1;
+    burger.addEventListener('click', () => {
+        count += 1;
+        if (count % 2 == 0) {
+            navbar.style.display = 'flex';
+        }
+        else {
+            navbar.style.display = 'none';
 
-    }
-})
+        }
+    })
 
+</script>
+
+<script>
+    // jquery
+    $(document).ready(function () {
+        if ($(window).width < 526) {
+            $(".searchbar").addClass("items");
+        }
+
+    })
 </script>
 <script>
 
