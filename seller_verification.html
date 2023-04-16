@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="CSS/dashboard.css">
+    <link rel="stylesheet" href="CSS/seller_verification.css">
     <script src="https://kit.fontawesome.com/9110d07ed9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -15,13 +15,10 @@
 
 <body>
     <nav class="navbar">
-        
         <div class="img_container">
             <img src="/images/logo1.png" alt="not_set">
         </div>
         <div class="searchbar">
-           
-
             <div id="wrapper1" class="wrapper">
                 <div class="search-input">
                     <a href="" target="_blank" hidden></a>
@@ -32,32 +29,23 @@
                     <div class="icon"><i class="fas fa-search"></i></div>
                 </div>
             </div>
-
+            <button type="button" id="start-btn" class="mic"><i class="fa-sharp fa-solid fa-microphone"></i></button>
         </div>
-        <button type="button" id="start-btn" class="mic"><i class="fa-sharp fa-solid fa-microphone"></i></button>
         <ul class="items">
             <li class="item"><a href="/homepage.html">Home</a></li>
             <li class="item"><a href="/login.html">Login/Signup</a></li>
-            <li class="item ">
-                <a href="#" class="dropdownbtn">
-                    More
-                    <ol class="dropd1 dropdown-content">
-                        <li>Profile</li>
-                        <li class="dropdownbtn1">
-                            Categories
-                            <ol class="dropd2 dropdown-content1 dropdownbtn1">
-                                <li>Text Files</li>
-                                <li>Image Files</li>
-                                <li>Audio Files</li>
-                                <li>Video Files</li>
-                            </ol>
-                        </li>
-                    </ol>
-
-                </a>
-            </li>
+            <li class="item"><a href="#" class="dropdownbtn">Become a seller</a></li>
+            <li class="item"><a href="#" class="dropdownbtn">Dashboard</a></li>
             <li class="item"><a href="add_to_cart.html"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
         </ul>
+
+
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
 
 
@@ -65,9 +53,9 @@
         
         <!-- left section -->
         <div class="profile">
-            <div class="togglebtn">
+            <!-- <div class="togglebtn">
                 <i class="fa-solid fa-bars"></i>
-            </div>
+            </div> -->
             <!-- left-side top section -->
             <div class="editor">
                 <div class="img-container">
@@ -80,11 +68,8 @@
             <!-- left-side bottom section -->
             <div class="actions">
                 <ul>
-                    <a href="#">
-                        <li>Products</li>
-                    </a>
-                    <a href="#">
-                        <li>Bank Account</li>
+                    <a href="seller_dashboard.html">
+                        <li>Personal</li>
                     </a>
                     <a href="#">
                         <li>verification</li>
@@ -98,8 +83,59 @@
 
 
 
+        <div class="verify-info">
+            <div class="verified-items">
+                <h2>Verified Items</h2>
+                <table>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Verified</th>
+                    </tr>
+                    <tr>
+                        <td>Image 1</td>
+                        <td>750</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Image 1</td>
+                        <td>750</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Image 1</td>
+                        <td>750</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Image 1</td>
+                        <td>750</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Image 1</td>
+                        <td>750</td>
+                        <td>✅</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="unverified-items">
+                <h2>Unverified Items</h2>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Reason</th>
+                    </tr>
+                    <tr>
+                        <td>Image3</td>
+                        <td>Irrevelant content</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
         <!-- right section -->
-        <div class="more-info">
+        <!-- <div class="more-info">
             <div class="seller-details">
 
                 <h1>Personal Details</h1>
@@ -118,14 +154,14 @@
                     <label for="branch">Branch : Mehsana</label>
                     <label for="branch">IFSC Code : MEH45600</label>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div class="upload-items">
                 <div class="p_name">
                     <label for="product"></label>
                 </div>
             </div> -->
-<hr class="divider">
+<!-- <hr class="divider">
             <div class="upload-items">
                 <h2>Upload Items</h2>
                 <div class="combine">
@@ -154,13 +190,13 @@
                         </div>
                     </form>
                     <div class="btns-2">
-                    <!-- <button type="button" id="add-row" onclick="add_more_row()">New</button> -->
+                     <button type="button" id="add-row" onclick="add_more_row()">New</button> 
                     <button type="button" id="verify">Apply for verification</button>
                 </div>
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
 
         <!-- show popup menu -->

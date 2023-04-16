@@ -416,34 +416,6 @@ html{
   background-color: black;
 }
 
-/* @media screen and (max-width:1309) {
-  .navbar ul li{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    font-size: 1.3rem;
-  }
-  
-}
-@media screen and (max-width:861px){
-  .footer_main .sub_footer{
-    display: block;
-  }
-  .footer_main .sub_footer .dif_block ul{
-    margin:15% 0%;
-  }
-  .footer_main .sub_footer .dif_block ul li{
-      margin: 1% 0%;
-    }
-    .footer_main .last_footer {
-      display: block;
-      text-align: center;
-      padding: 2%;
-      margin: 0%;
-    } */
-    
-    /* } */
-
 .burger{
   display: none;
 }
