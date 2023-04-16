@@ -476,9 +476,7 @@ body{
 table{
     width: 100%;
 }
-.abs{
-    position: absolute;
-}
+
 td,th{
     text-align: left;
     padding: 15px;

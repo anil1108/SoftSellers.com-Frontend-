@@ -468,8 +468,21 @@ body{
 .box-8::-webkit-scrollbar{
   display: none;
 }
-.box-8{
-    
+
+.list{
+    display: flex;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 15px;
+
+}
+.list input{
+    padding: 7px;
+    /* width: 100%; */
+    width: 95%;
+}
+.products_verified{
+    padding: 15px;
 }
 table{
     width: 100%;

@@ -11,7 +11,7 @@ function show_popup(){
 
 
 
-<nav class="navbar navbar-expand-lg p-0 bg-body-tertiary">
+{/* <nav class="navbar navbar-expand-lg p-0 bg-body-tertiary">
         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -51,4 +51,4 @@ function show_popup(){
             </ul>
         </div>
         
-    </nav>
+    </nav> */}

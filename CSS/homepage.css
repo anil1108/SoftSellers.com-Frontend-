@@ -180,13 +180,13 @@ html{
   margin: 0rem 0.6rem;
 }
 
-.navbar ul{
+.navbar .items{
     display: flex;
     margin-left: 1.8rem;
     font-style: var(--font-a);
   }
 
-.navbar ul li{
+.navbar .items .item{
     /* display: flex; */
     /* font-style: var(--font-main); */
     list-style: none;
@@ -194,16 +194,16 @@ html{
   }
 
 
-  .navbar ul li a{
+  .navbar .items .item a{
     display: block;
-    padding: 0.625rem 2.18rem ;
+    padding: 0.625rem 1rem;
     border-radius: 1.2rem;
     text-decoration: none;
     color: black;
     transition: 0.3s ease;
   }
 
-.navbar ul li a:hover{
+.navbar .items .item a:hover{
     color: black;
     background-color: white;
 }

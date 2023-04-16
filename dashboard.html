@@ -101,10 +101,31 @@
         <!-- right section -->
         <div class="more-info">
             <div class="seller-details">
-                <h2>Welcome <label for="name">Softseller</label></h2>
+
+                <h1>Personal Details</h1>
+                <div class="prsnl-detail">
+                    <label for="name">First Name : Name</label>
+                    <label for="name">Last Name : Name</label>
+                    <label for="name">Mobile No. : 9922337788</label>
+                    <label for="name">Email : xyz@gmail.com</label>
+                    <label for="name">City : Mehsana</label>
+                    <label for="name">Address : Ganpat University</label>
+                </div>
+                <h1>Bank Details</h1>
+                <div class="bank-detail">
+                    <label for="acc_no">Bank Name : Mehsana Urban Co-op</label>
+                    <label for="acc_no">Account Number : 112255447788996</label>
+                    <label for="branch">Branch : Mehsana</label>
+                    <label for="branch">IFSC Code : MEH45600</label>
+                </div>
             </div>
 
-
+            <!-- <div class="upload-items">
+                <div class="p_name">
+                    <label for="product"></label>
+                </div>
+            </div> -->
+<hr class="divider">
             <div class="upload-items">
                 <h2>Upload Items</h2>
                 <div class="combine">
@@ -113,10 +134,7 @@
                             <label for="product_name">Name : </label>
                             <input type="text" name="p_name" id="p_name">
                         </div>
-                        <div class="item-labels">
-                            <label for="product_title">Upload Image : </label>
-                            <input type="file" name="p_img" id="p_img">
-                        </div>
+                        
 
                         <div class="item-labels">
                             <label for="product_desc">Description : </label>
@@ -130,11 +148,16 @@
                             <label for="product_price">Price : </label>
                             <input type="text" name="p_price" id="p_price">
                         </div>
+                        <div class="item-labels">
+                            <label for="product_title">Upload Product : </label>
+                            <input type="file" name="p_img" id="p_img">
+                        </div>
                     </form>
-
+                    <div class="btns-2">
+                    <!-- <button type="button" id="add-row" onclick="add_more_row()">New</button> -->
+                    <button type="button" id="verify">Apply for verification</button>
                 </div>
-                <button type="button" id="add-row" onclick="add_more_row()">New</button>
-                <button type="button" id="verify">Apply to verify Product</button>
+                </div>
 
             </div>
         </div>
