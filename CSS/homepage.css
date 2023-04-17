@@ -174,7 +174,6 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;  
-  /* color: #090a0a; */
   font-size: 1.37rem;
   color: rgb(61, 59, 59) ;
   margin: 0rem 0.6rem;
@@ -355,7 +354,7 @@ html{
   /* font-size: 1.2rem; */
 }
 
-.contents .items #btns #to_cart a{
+.contents .items #btns #to_buy a{
   text-decoration: none;
   color: white;
 }

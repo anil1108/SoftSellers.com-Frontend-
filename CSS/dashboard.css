@@ -182,8 +182,6 @@ html{
 }
 
 .navbar .items .item {
-    /* display: flex; */
-    /* font-style: var(--font-main); */
     list-style: none;
     font-size: 1.3rem;
 }
