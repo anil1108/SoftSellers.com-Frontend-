@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins&display=swap');
+
 html {
   /* font-size: 62.5%; */
   width: 100%;
@@ -9,7 +11,12 @@ html {
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Itim', cursive;
+  /* font-family: 'Itim', cursive */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+}
+body{
+  background: rgb(177, 176, 176);
 }
 
 
@@ -21,7 +28,7 @@ html {
 
 .navbar::before {
   content: "";
-  background-color: white;
+  /* background-color: white; */
   position: absolute;
   height: 100%;
   width: 100%;
@@ -39,7 +46,8 @@ html {
   position: fixed;
   box-shadow: 0px 0px 8px;
   /* background-color: #085a90; */
-  background-image: linear-gradient(to right, #4cc43c, #20702b);
+  /* background-image: linear-gradient(to right, #4cc43c, #20702b); */
+  background: #eaebed;
   z-index: 999;
   color: #090a0a;
   /* opacity:0.5;  */
@@ -211,20 +219,19 @@ html {
 }
 
 .burger {
-  display: none;
+  display: block;
 }
 
 .burger div {
   height: 4px;
   width: 26px;
-  /* color: black; */
   background-color: black;
   opacity: 0.8;
   margin: 5px;
 }
 
 
-@media screen and (max-width:1187px) {
+@media screen and (max-width:1299px) {
   .navbar ul {
     margin-left: 0rem;
   }
@@ -256,20 +263,63 @@ html {
     height: 3rem;
   }
 }
+@media screen and (max-width:1116px) {
+  .navbar ul {
+    margin-left: 0rem;
+  }
 
-/* making a collapsing navbar */
-@media screen and (max-width:955px) {
+  .navbar ul li {
+    font-size: 1rem;
+  }
+
+  .navbar .searchbar {
+    display: flex;
+    margin-left: 0.2rem;
+
+  }
+
+  .navbar .items{
+    margin-left: 1rem;
+  }
+  .navbar ul li a {
+    display: block;
+    padding: 0.625rem 1rem;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+  }
+
+  .search-input input {
+    width: 12.7rem;
+  }
+
+  .img_container img {
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width:1098px) {
   .categories {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .categories div a:hover {
     background-color: rgb(230, 225, 220);
   }
 
-  .cat_items {
+  .categories a{
     width: 100%;
+  }
+
+  .cat_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar {
@@ -281,20 +331,37 @@ html {
     width: 100%;
     position: absolute;
     z-index: 2;
-    margin-top: 16rem;
+    margin-left: 0px; 
+    margin-top: 19.5rem;
     display: none;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(rgb(69, 126, 73), rgb(172, 239, 170));
+    background: #244d61;
+    
+    font-weight: bold;
+  }
+
+  .navbar .items .item a{
+    color: white;
   }
 
   .burger {
+    z-index: 999;
     display: block;
     position: absolute;
     cursor: pointer;
     right: 40px;
   }
+
+  .grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 0.625rem;
+    padding: 1.2rem;
+  }  
 }
+
+
 
 .h-nav {
   height: 50px;
@@ -306,22 +373,22 @@ html {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
-  background-image:linear-gradient(rgb(69, 126, 73),rgb(172, 239, 170))
+  background: #244d61;
+  /* color: white; */
+  /* background-image:linear-gradient(rgb(69, 126, 73),rgb(172, 239, 170)) */
 }
 
 .categories a{
-  color: black;
-  text-decoration: none ;
-  /* width: 20rem; */
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   justify-content: space-evenly;
-  /* margin: 5%; */
-  padding:  0.5rem 5rem;
+  padding: 0.5rem 5rem;
   border-radius: 1rem;
-  background-image: -o-linear-gradient(red,black);
+  color: #eaebed;
+  background-image: -o-linear-gradient(red, black);
   transition: 0.3s ease;
 }
 
@@ -330,8 +397,14 @@ html {
 }
 .categories div a:hover{
   background-color: rgb(230, 225, 220);
+  color: black;
 }
 
+.main{
+  /* background: rgb(177, 176, 176); */
+  background: rgb(177, 176, 176);
+  
+}
 
 .main , .detail_list{
     margin: 2% 15%;
@@ -370,9 +443,6 @@ hr{
 .main .main_cart .itemcontainer .other-info{
     width: 70%;
     padding:0px 25px 0px 10px;
-    /* display: block; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
 }
 
 .main .main_cart .itemcontainer .other-info #delete{
@@ -461,6 +531,93 @@ hr{
     color: rgb(35, 156, 35);
     font-weight:600;
 }
+
+
+@media screen and (max-width:1350px){
+  .main .main_cart .itemcontainer .img-container{
+    width: 30%;
+}
+
+.main .main_cart .itemcontainer img{
+    height: 200px;
+    width: 200px;
+    margin-right: 15px;
+}
+
+.main .main_cart .itemcontainer .other-info{
+    width: 50%;
+    /* padding:0px 25px 0px 10px; */
+}
+}
+@media screen and (max-width:1030px) {
+  .main .main_cart .itemcontainer .img-container{
+    width: 20%;
+}
+
+.main .main_cart .itemcontainer img{
+    height: 100px;
+    width: 100px;
+    margin-right: 15px;
+}
+
+.main .main_cart .itemcontainer .other-info{
+    width: 70%;
+    /* padding:0px 25px 0px 10px; */
+}
+.main .main_cart .itemcontainer .other-info #delete{
+  margin-top: 10px;
+  float: right;
+  padding:7px ;
+  border-radius: 8px;
+  border: none;
+  background-color: #56cfbf;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width:50px;
+  font-weight: 600;
+}
+}
+@media screen and (max-width:814px) {
+  .main .main_cart .itemcontainer .img-container{
+    width: 30%;
+}
+
+.main .main_cart .itemcontainer img{
+    height: 100px;
+    width: 100px;
+    margin-right: 15px;
+}
+
+.main .main_cart .itemcontainer .other-info{
+    width: 50%;
+    /* padding:0px 25px 0px 10px; */
+}
+.main .main_cart .itemcontainer .other-info #delete{
+  margin-top: 1px;
+  float: right;
+  padding:7px ;
+  border-radius: 8px;
+  border: none;
+  background-color: #56cfbf;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width:50px;
+  font-weight: 600;
+}
+}
+
+@media screen and (max-width:650px){
+  .main .main_cart .itemcontainer{
+    display: block;
+    padding: 5px;
+}
+#d_price{
+  margin-left: 20px;
+}
+#delete{
+  margin-left: 150px;
+}
+} 
 
 .footer_main .sub_footer{
     padding-top: 15px;

@@ -148,6 +148,23 @@
     </section>
 </body>
 <script>
+    // burger button function
+    burger = document.querySelector('.burger')
+    navbar = document.querySelector('.items')
+    var count = 1;
+    burger.addEventListener('click', () => {
+        count += 1;
+        if (count % 2 == 0) {
+            navbar.style.display = 'flex';
+        }
+        else {
+            navbar.style.display = 'none';
+
+        }
+    })
+
+</script>
+<script>
     function add_more_row() {
         var counter = 1;
         html = '<tr>\
