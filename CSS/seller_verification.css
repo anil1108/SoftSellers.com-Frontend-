@@ -373,7 +373,10 @@ html {
 .main-container .profile {
     display: block;
     width: 20%;
-    background-color: rgb(155, 234, 151);
+    /* background-color: rgb(155, 234, 151); 
+    */
+  background: #244d61;
+
     padding: 8px;
 }
 
@@ -399,12 +402,14 @@ html {
     border: none;
     padding: .5rem;
     font-size: 1.1rem;
-    background-color: rgb(155, 234, 151);
+    background: #244d61;
 }
 
 .editor .profile_editor:hover {
     cursor: pointer;
-    background-color: rgb(44, 152, 44);
+    /* background-color: rgb(44, 152, 44); */
+  
+    background-color: rgb(58, 120, 134);
     color: #ffffff;
     transition: 0.3s;
     width: 100%;
@@ -460,7 +465,9 @@ ul {
 }
 
 .actions ul li:hover {
-    background: rgb(44, 152, 44);
+    /* background: rgb(44, 152, 44); */
+    background-color: rgb(58, 120, 134);
+
     transition: 0.3s;
 
     color: white;
@@ -472,7 +479,9 @@ ul {
 .verify-info{
     padding: 2rem;
     width: 100%;
-    background: aquamarine;
+    /* background: aquamarine; */
+    background: rgb(177, 176, 176);
+
     
 }
 .verified-items,.unverified-items{
@@ -520,7 +529,7 @@ ul {
         height: auto;
         padding: 1rem;
         width: 100%;
-        background: aquamarine;        
+        /* background: aquamarine;         */
     }
 
     .verify-info h2{

@@ -5,6 +5,7 @@
 html {
   /* font-size: 62.5%; */
   width: 100%;
+  background: rgb(177, 176, 176);
 }
 
 
@@ -391,7 +392,8 @@ html {
     z-index: 1;
     top: 80px;
     left: 0;
-    background-image: linear-gradient(to right ,#5a9252,#449e50);
+    background: #244d61;
+    /* background-image: linear-gradient(to right ,#5a9252,#449e50); */
     overflow: hidden;
     transition: 0.5s;
     padding-top:30px;
@@ -419,6 +421,7 @@ html {
     padding: 16px;
     margin-left: 300px;
     margin-top: 80px;
+    /* background: #644bff; */
 }
 .head{
     padding: 20px;
